@@ -1,0 +1,49 @@
+#jsonForm {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.input-label {
+  font-size: 20px;
+  width: 50%;
+}
+
+.input-field {
+  width: 50%;
+}
+
+.submitButtonContainer {
+  display: flex;
+  justify-content: center;
+
+  margin: 64px 0;
+}
+
+.submitButtonContainer button {
+  padding: 12px 24px;
+
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #00b56c;
+  color: white;
+  border: #00b56c 1px solid;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.submitButtonContainer button:hover {
+  background-color: #33c489;
+  border: #33c489 1px solid;
+}
+
+/* responsive */
+
+@media screen and (max-width: 768px) {
+}
