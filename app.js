@@ -31,10 +31,10 @@ function renderForm(json) {
       input.type = "text";
       input.classList.add("input-field");
       input.name = key;
-      input.value = sessionStorage.getItem(key) || "";
+      input.value = localStorage.getItem(key) || "";
       container.appendChild(input);
       input.addEventListener("blur", (event) => {
-        sessionStorage.setItem(key, event.target.value);
+        localStorage.setItem(key, event.target.value);
       });
     }
   }
@@ -65,7 +65,7 @@ function downloadJSON() {
   // Cleanup
   URL.revokeObjectURL(url);
   a.remove();
-  sessionStorage.clear();
+  localStorage.clear();
 }
 
 // Initialize the form by loading the translation.json
