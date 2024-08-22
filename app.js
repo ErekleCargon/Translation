@@ -11,6 +11,19 @@ async function loadAndRenderForm() {
   }
 }
 
+const aba = "ABABA";
+
+let metaDescription = document.querySelector('meta[property="og:description"]');
+if (!metaDescription) {
+  metaDescription = document.createElement("meta");
+  metaDescription.setAttribute("property", "og:description");
+  document.head.appendChild(metaDescription);
+}
+metaDescription.setAttribute(
+  "content",
+  `Connecting shippers and carriers with our on-demand ${aba}.`
+);
+
 // Function to render input fields based on JSON keys
 function renderForm(json) {
   const form = document.getElementById("jsonForm");
