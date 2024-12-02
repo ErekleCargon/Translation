@@ -36,7 +36,7 @@ function renderForm(json) {
       form.appendChild(container);
 
       const label = document.createElement("label");
-      label.innerHTML = `${key}: `;
+      label.innerHTML = `${key} `;
       label.classList.add("input-label");
       container.appendChild(label);
 
